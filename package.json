@@ -1,6 +1,6 @@
 {
   "name": "itc-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "我的cli",
   "bin": {
     "itc": "./bin/itc.js"
