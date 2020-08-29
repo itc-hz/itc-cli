@@ -1,4 +1,4 @@
-#!/user/bin/env node
+#!/usr/bin/env node
 
 const program = require("commander")
 const path = require("path")
@@ -97,7 +97,7 @@ function go() {
 				}
 			])
 			.then((answers) => {
-				console.log(answers)
+				// console.log(answers)
 				return download({target: projectRoot, type: answers.type}).then((target) => {
 					const context = {
 						name: projectRoot,
@@ -120,8 +120,8 @@ function go() {
 			})
 			.then((context) => {
 				console.log(logSymbols.success, chalk.bgCyan("创建成功:)"))
-				console.log(logSymbols.success,chalk.bgCyan("\nCongratulations!!! Next step..⬇\n"))
-				console.log(chalk.bgCyan("cd " + context.root + "\nnpm install\nnpm run dev"))
+				console.log(logSymbols.success,chalk.bgCyan(`Congratulations!!! Next step..⬇\n`))
+				console.log(chalk.bgCyan(`cd ${context.root}\nnpm install\nnpm run dev`))
 			})
 			.catch((err) => console.error(logSymbols.error, chalk.red(`创建失败：${err.message}`)))
 	})
