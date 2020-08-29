@@ -1,9 +1,14 @@
 {
   "name": "itc-cli",
-  "version": "1.0.1",
-  "description": "我的cli",
+  "version": "1.0.2",
+  "description": "itc-hz-cli",
   "bin": {
-    "itc": "./bin/itc.js"
+    "itc-cli": "./bin/itc-cli"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itc-hz/itc-cli.git"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
