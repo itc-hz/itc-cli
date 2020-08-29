@@ -2,6 +2,16 @@
 
 > simple cli tools for itc-hz front-end
 
+
+install with npm
+```bash
+npm i -g itc-cli
+```
+OR
+```bash
+yarn global add itc-cli
+```
+
 ```bash
 Usage: itc-cli <command> [project-name]
 
